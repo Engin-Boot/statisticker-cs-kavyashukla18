@@ -10,7 +10,7 @@ namespace Statistics
         public double max;
         public double min;
     }
-    public class StatsComputer: Stats
+    public class StatsComputer
     {
         public Stats CalculateStatistics(List<double> numbers) {
             //Implement statistics here
