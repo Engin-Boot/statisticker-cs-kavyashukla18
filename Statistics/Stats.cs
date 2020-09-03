@@ -6,8 +6,8 @@ namespace Statistics
 {
     public class Stats
     {
-        public float average { get; set; }
-        public float max { get; set; }
-        public float min { get; set; }
+        public double average { get; set; }
+        public double max { get; set; }
+        public double min { get; set; }
     }
 }
