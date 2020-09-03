@@ -3,7 +3,7 @@ using Xunit;
 using Statistics;
 using System.Collections.Generic;
 using Xunit.Abstractions;
-using System.Reflection;
+using static Statistics.Stats;
 
 namespace Statistics.Test
 {
