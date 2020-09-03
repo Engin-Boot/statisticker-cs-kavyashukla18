@@ -18,26 +18,15 @@ namespace Statistics
 
             if (numbers.Count == 0)
             {
-                stats.average = stats.max = stats.min = Double.NaN;
+                stats.average = Double.NaN;
+                stats.max = Double.NaN;
+                stats.min = Double.NaN;
             }
             else
             {
-                stats.max = numbers[0];
-                stats.min = numbers[0];
-                foreach (var num in numbers)
-                {
-                    stats.average += num;
-                    if (num > stats.max)
-                    {
-                        stats.max = num;
-                    }
-                    if (num < stats.min)
-                    {
-                        stats.min = num;
-                    }
-                }
-
-                stats.average /= numbers.Count;
+                stats.average = numbers.Average();
+                stats.min = numbers.Min();
+                stats.Max = numbers.Max();
             }
             return stats;
         }
