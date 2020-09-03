@@ -26,7 +26,7 @@ namespace Statistics
             {
                 stats.average = numbers.Average();
                 stats.min = numbers.Min();
-                stats.Max = numbers.Max();
+                stats.max = numbers.Max();
             }
             return stats;
         }
