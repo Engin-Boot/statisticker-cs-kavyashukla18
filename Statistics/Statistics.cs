@@ -16,18 +16,16 @@ namespace Statistics
                 statsCompute.average = Double.NaN;
                 statsCompute.max = Double.NaN;
                 statsCompute.min = Double.NaN;
+                return statsCompute;
             }
-            else
+            for(int iterateNumList = 0; iterateNumList < numbers.Count; iterateNumList++)
             {
-                for(int iterateNumList = 0; iterateNumList < numbers.Count; iterateNumList++)
-                {
-                    if (numbers[iterateNumList] == Double.NaN)
+                if (numbers[iterateNumList] == Double.NaN)
                         numbers.RemoveAt(iterateNumList);
-                }
-                statsCompute.average = numbers.Average();
-                statsCompute.min = numbers.Min();
-                statsCompute.max = numbers.Max();
             }
+            statsCompute.average = numbers.Average();
+            statsCompute.min = numbers.Min();
+            statsCompute.max = numbers.Max();
             return statsCompute;
         }
     }
