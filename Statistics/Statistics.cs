@@ -18,11 +18,6 @@ namespace Statistics
                 statsCompute.min = Double.NaN;
                 return statsCompute;
             }
-            for(int iterateNumList = 0; iterateNumList < numbers.Count; iterateNumList++)
-            {
-                if (numbers[iterateNumList] == Double.NaN)
-                        numbers.RemoveAt(iterateNumList);
-            }
             statsCompute.average = numbers.Average();
             statsCompute.min = numbers.Min();
             statsCompute.max = numbers.Max();
